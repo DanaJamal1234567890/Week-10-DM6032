@@ -6,10 +6,12 @@
     cursor: pointer;
     transition: 0.3s ease;
 }
+
 .hover-btn:hover {
     background: darkgreen;
     transform: scale(1.1);
 }
+
 .dropdown {
     display: inline-block;
     position: relative;
@@ -45,7 +47,10 @@
 
 .dropdown:hover .dropdown-content {
     display: block;
-  .zoomimage {
+}
+
+/* Zoom image styles - separate block */
+.zoomimage {
     width: 200px;
     transition: 0.5s;
     margin-top: 20px;
@@ -54,3 +59,4 @@
 .zoomimage:hover {
     transform: scale(1.2);
 }
+
