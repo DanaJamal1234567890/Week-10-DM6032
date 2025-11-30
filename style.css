@@ -1,5 +1,5 @@
 .hover-btn {
-    padding: 15px;
+    padding: 15px 25px;
     background: green;
     color: white;
     border: none;
@@ -12,6 +12,7 @@
     transform: scale(1.1);
 }
 
+/* Dropdown Menu */
 .dropdown {
     display: inline-block;
     position: relative;
@@ -19,7 +20,7 @@
 }
 
 .dropbtn {
-    padding: 12px;
+    padding: 12px 20px;
     background: blue;
     color: white;
     border: none;
@@ -30,8 +31,9 @@
     display: none;
     position: absolute;
     background: #ccc;
-    min-width: 120px;
+    min-width: 140px;
     box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    z-index: 1;
 }
 
 .dropdown-content a {
@@ -49,14 +51,13 @@
     display: block;
 }
 
-/* Zoom image styles - separate block */
-.zoomimage {
+/* Zoom Image */
+.zoom-img {
     width: 200px;
     transition: 0.5s;
     margin-top: 20px;
 }
 
-.zoomimage:hover {
+.zoom-img:hover {
     transform: scale(1.2);
 }
-
