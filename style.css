@@ -52,12 +52,13 @@
 }
 
 /* Zoom Image */
-.zoom-img {
+.zoomimage {
     width: 200px;
     transition: 0.5s;
     margin-top: 20px;
 }
 
-.zoom-img:hover {
+.zoomimage:hover {
     transform: scale(1.2);
 }
+
