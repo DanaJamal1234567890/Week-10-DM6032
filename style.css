@@ -12,7 +12,6 @@
     transform: scale(1.1);
 }
 
-/* Dropdown Menu */
 .dropdown {
     display: inline-block;
     position: relative;
@@ -28,11 +27,15 @@
 }
 
 .dropdown-content {
-    display: none;
     position: absolute;
+    top: 100%;
+    left: 0;
     background: #ccc;
     min-width: 140px;
     box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
     z-index: 1;
 }
 
@@ -48,17 +51,16 @@
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    opacity: 1;
+    visibility: visible;
 }
 
-/* Zoom Image */
 .zoomimage {
     width: 200px;
-    transition: 0.5s;
+    transition: transform 0.5s ease;
     margin-top: 20px;
 }
 
 .zoomimage:hover {
     transform: scale(1.2);
 }
-
